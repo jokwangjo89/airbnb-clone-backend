@@ -13,6 +13,24 @@ typing-extensions = {version = ">=4", markers = "python_version < \"3.11\""}
 tests = ["pytest", "pytest-asyncio", "mypy (>=0.800)"]
 
 [[package]]
+name = "beautifulsoup4"
+version = "4.12.3"
+description = "Screen-scraping library"
+category = "main"
+optional = false
+python-versions = ">=3.6.0"
+
+[package.dependencies]
+soupsieve = ">1.2"
+
+[package.extras]
+cchardet = ["cchardet"]
+chardet = ["chardet"]
+charset-normalizer = ["charset-normalizer"]
+html5lib = ["html5lib"]
+lxml = ["lxml"]
+
+[[package]]
 name = "django"
 version = "5.1.4"
 description = "A high-level Python web framework that encourages rapid development and clean, pragmatic design."
@@ -28,6 +46,14 @@ tzdata = {version = "*", markers = "sys_platform == \"win32\""}
 [package.extras]
 argon2 = ["argon2-cffi (>=19.1.0)"]
 bcrypt = ["bcrypt"]
+
+[[package]]
+name = "soupsieve"
+version = "2.6"
+description = "A modern CSS selector implementation for Beautiful Soup."
+category = "main"
+optional = false
+python-versions = ">=3.8"
 
 [[package]]
 name = "sqlparse"
@@ -60,11 +86,13 @@ python-versions = ">=2"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "a7c453afc208e4bd2f81a75f87754f07060e7a4935fcf8a715d59ab201457b53"
+content-hash = "28a3a0df3e3312c24ee4f9a0f7de44760ddd62fb553b80462401d28a974900fd"
 
 [metadata.files]
 asgiref = []
+beautifulsoup4 = []
 django = []
+soupsieve = []
 sqlparse = []
 typing-extensions = []
 tzdata = []
